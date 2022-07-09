@@ -10,13 +10,13 @@
     </head>
     <body>
         <header>
-            <div class="logo">
+            <div class="header__logo">
                 <img src="./images/logo/ohmyfood.png" alt="logo">
             </div>
-            <div class="loc">
-                <form class="form" method="post" action="#">
+            <div class="form">
+                <form class="form__loc" method="post" action="#">
                     <i class="fa-solid fa-location-dot fa-lg"></i>
-                    <input class="form_search" type="text" name="pseudo" id="pseudo" placeholder="Paris, Belleville" size="10" maxlength="20" />
+                    <input class="form--input_style" type="text" name="pseudo" id="pseudo" placeholder="Paris, Belleville" size="10" maxlength="20" />
                 </form>
             </div>
             <div class="explo">
@@ -27,29 +27,86 @@
         </header>
         <main>
             <div class="working">
-                <div class="working_title">
+                <div class="working__title">
                     <h2>Fonctionnement</h2>
                 </div>
-                <div class="working_box">
-                    <div class="working_card">
-                        <div class="circle icon1">1</div>
-                        <i class="fa-solid fa-mobile-alt fa-lg icon2"></i>
+                <div class="working__box">
+                    <div class="card-working">
+                        <div class="circle">1</div>
+                        <i class="fa-solid fa-mobile-alt fa-lg card-working__icon"></i>
                         <h4>Choisissez un restaurant</h4>
                     </div>
-                    <div class="working_card">
-                        <div class="circle icon1">2</div>
-                        <i class="fa fa-list-ul fa-lg icon2"></i>
+                    <div class="card-working">
+                        <div class="circle">2</div>
+                        <i class="fa fa-list-ul fa-lg card-working__icon"></i>
                         <h4>Composez votre menu</h4>
                     </div>
-                    <div class="working_card card3">
-                        <div class="circle icon1">3</div>
-                        <i class="fa-solid fa-store fa-lg icon2"></i>
+                    <div class="card-working card-working--highlight_back">
+                        <div class="circle">3</div>
+                        <i class="fa-solid fa-store fa-lg card-working__icon  card-working__icon--highlight"></i>
                         <h4>Déguster au retaurant</h4> 
                     </div>
                 </div>
-            </div>            
+            </div>
+            <div class="resto">
+                <div class="resto__title">
+                    <h2>Restaurants</h2>
+                </div>
+                <div class="card-resto">
+                    <img class="card-resto__img" src="./images/restaurants/palette.jpg" alt="parc">
+                    <div class="card-resto__description">
+                        <div class="card-resto__txt">
+                            <p><strong>La palette du goût</strong></p> 
+                            <p>Ménilmontant</p>
+                        </div>           
+                        <i class="fa-solid fa-heart card-resto__icon"></i>
+                    </div>
+                </div>
+                <div class="card-resto">
+                    <img class="card-resto__img" src="./images/restaurants/palette.jpg" alt="parc">
+                    <div class="card-resto__description">
+                        <div class="card-resto__txt">
+                            <p><strong>La palette du goût</strong></p> 
+                            <p>Ménilmontant</p>
+                        </div>           
+                        <i class="fa-solid fa-heart card-resto__icon"></i>
+                    </div>
+                </div>
+                <div class="card-resto">
+                    <img class="card-resto__img" src="./images/restaurants/palette.jpg" alt="parc">
+                    <div class="card-resto__description">
+                        <div class="card-resto__txt">
+                            <p><strong>La palette du goût</strong></p> 
+                            <p>Ménilmontant</p>
+                        </div>           
+                        <i class="fa-solid fa-heart card-resto__icon"></i>
+                    </div>
+                </div>
+                <div class="card-resto">
+                    <img class="card-resto__img" src="./images/restaurants/palette.jpg" alt="parc">
+                    <div class="card-resto__description">
+                        <div class="card-resto__txt">
+                            <p><strong>La palette du goût</strong></p> 
+                            <p>Ménilmontant</p>
+                        </div>           
+                        <i class="fa-solid fa-heart card-resto__icon"></i>
+                    </div>
+                </div>
+            </div>
+            
+
         </main>
-        <footer></footer>
+        <footer>
+            <div class="footer__logo">
+                <img src="./images/logo/ohmyfood.png" alt="logo">
+            </div>
+            <div>
+                <p>Proposer un restaurant</p>
+                <p>Devenir partenaire</p>
+                <p>Mentions légales</p>
+                <p>Contact</p>
+            </div>
+        </footer>
     </body>
 
 </html>
