@@ -1,9 +1,12 @@
+/* ---------- Typo ---------- */
 @import "./base/typo";
-/* ---*/
-@import "./utils/variables";
 
+@import "./utils/variables";
+/* ---------- Header ---------- */
 @import "./layouts/header";
+/* ---------- Form ---------- */
 @import "./layouts/form";
+/* ---------- Homes ---------- */
 @import "./pages/home";
 @import "./layouts/footer";
 
