@@ -2,12 +2,15 @@
 @import "./base/typo";
 
 @import "./utils/variables";
+@import "./utils/mixins";
 /* ---------- Header ---------- */
 @import "./layouts/header";
 /* ---------- Form ---------- */
 @import "./layouts/form";
 /* ---------- Homes ---------- */
 @import "./pages/home";
+@import "./pages/resto_palette";
+
 @import "./layouts/footer";
 
 @import "./components/button";

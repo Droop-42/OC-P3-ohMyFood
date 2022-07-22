@@ -2,65 +2,41 @@
 <!-- By C.C. -->
 <html lang="Fr">
     <head>
-        <title>ohmyfood</title>
+        <title>La palette du gout</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
-        <header>
+        <header>           
             <div class="header__logo">
-                <img src="./images/logo/ohmyfood.png" alt="logo">
+                <i class="fa-solid fa-arrow-left"></i>
+                <img src="../images/logo/ohmyfood.png" alt="logo">
             </div>
-            <div class="form">
-                <form class="form__loc" method="post" action="#">
-                    <i class="fa-solid fa-location-dot fa-lg"></i>
-                    <input class="form--input_style" type="text" name="pseudo" id="pseudo" placeholder="Paris, Belleville" size="10" maxlength="20" />
-                </form>
+            <div>
+                <img class="menu__img" src="../images/restaurants/palette.jpg" alt="parc">
             </div>
-            <div class="explo">
-                <h1>Réservez le menu qui vous convient</h2>
-                    <p>Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
-                    <input class="button_search" type="submit" value="Explorez nos restaurants" />
-            </div>           
-        </header>
+        </header>    
         <main>
-            <div class="working">
-                <div class="working__title">
-                    <h2>Fonctionnement</h2>
+            
+            <div class="menu">
+                <div class="menu__title">
+                    <h2>La Palette du goût</h2>
                 </div>
-                <div class="working__box">
-                    <div class="card-working">
-                        <div class="circle">1</div>
-                        <i class="fa-solid fa-mobile-alt fa-lg card-working__icon"></i>
-                        <h4>Choisissez un restaurant</h4>
-                    </div>
-                    <div class="card-working">
-                        <div class="circle">2</div>
-                        <i class="fa fa-list-ul fa-lg card-working__icon"></i>
-                        <h4>Composez votre menu</h4>
-                    </div>
-                    <div class="card-working card-working--highlight_back">
-                        <div class="circle">3</div>
-                        <i class="fa-solid fa-store fa-lg card-working__icon  card-working__icon--highlight"></i>
-                        <h4>Déguster au retaurant</h4> 
-                    </div>
+                <div class="menu__title">
+                    <h2>Entrées</h2>
                 </div>
-            </div>
-            <div class="resto">
-                <div class="resto__title">
-                    <h2>Restaurants</h2>
-                </div>
-                <div class="resto__box">
-                    <div class="card-resto">
-                        <img class="card-resto__img" src="./images/restaurants/palette.jpg" alt="parc">
-                        <div class="card-resto__description">
-                            <div class="card-resto__txt">
-                                <p><strong>La palette du goût</strong></p> 
-                                <p>Ménilmontant</p>
+                <div class="menu__box">
+                    <div class="card-menu">
+                        <div class="card-menu__description">
+                            <div class="card-menu__txt">
+                                <h3>La palette du goût</h3>
+                                <span>Ménilmontant</span>
                             </div>           
-                            <i class="fa-solid fa-heart card-resto__icon"></i>
+                            <div>
+                                <span>25</span>
+                            </div>
                         </div>
                     </div>
                     <div class="card-resto">
@@ -101,7 +77,7 @@
         <footer>
             <div class="footer__box">
                 <div class="footer__logo">
-                    <img src="./images/logo/ohmyfood.png" alt="logo">
+                    <img src="../images/logo/ohmyfood.png" alt="logo">
                 </div>
                 <div class="footer__link_box">
                     <a href="#">
