@@ -6,6 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
@@ -22,7 +23,7 @@
             <div class="explo">
                 <h1>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
-                    <input class="button_search" type="submit" value="Explorez nos restaurants" />
+                    <a class="button_search" href="#resto">Explorez nos restaurants</a>
             </div>           
         </header>
         <main>
@@ -49,54 +50,80 @@
                 </div>
             </div>
             <div class="resto">
-                <div class="resto__title">
+                <div id="resto" class="resto__title">
                     <h2>Restaurants</h2>
                 </div>
                 <div class="resto__box">
-                    <div class="card-resto">
-                        <img class="card-resto__img" src="./images/restaurants/palette.jpg" alt="parc">
-                        <div class="card-resto__description">
-                            <div class="card-resto__txt">
-                                <p><strong>La palette du goût</strong></p> 
-                                <p>Ménilmontant</p>
-                            </div>           
-                            <i class="fa-solid fa-heart card-resto__icon"></i>
+                    <a href="html/resto_palette.html">
+                        <div class="card-resto">
+                            <img class="card-resto__img" src="./images/restaurants/palette.jpg" alt="parc">
+                            <div class="card-resto__description">
+                                <div class="card-resto__txt">
+                                    <p><strong>La palette du goût</strong></p> 
+                                    <p>Ménilmontant</p>
+                                </div>
+                                <div class="card-resto__icon">
+                                    <span class="hide">
+                                        <span class="material-icons base">favorite_border</span>
+                                        <span class="material-icons hover">favorite</span>
+                                    </span>
+                                </div>           
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-resto">
-                        <img class="card-resto__img" src="./images/restaurants/note.jpg" alt="parc">
-                        <div class="card-resto__description">
-                            <div class="card-resto__txt">
-                                <p><strong>La note enchantée</strong></p> 
-                                <p>Charonne</p>
-                            </div>           
-                            <i class="fa-solid fa-heart card-resto__icon"></i>
+                    </a>
+                    <a href="html/resto_note.html">
+                        <div class="card-resto">
+                            <img class="card-resto__img" src="./images/restaurants/note.jpg" alt="parc">
+                            <div class="card-resto__description">
+                                <div class="card-resto__txt">
+                                    <p><strong>La note enchantée</strong></p> 
+                                    <p>Charonne</p>
+                                </div>
+                                <div class="card-resto__icon">
+                                    <span class="hide">
+                                        <span class="material-icons base">favorite_border</span>
+                                        <span class="material-icons hover">favorite</span>
+                                    </span>
+                                </div>           
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-resto">
-                        <img class="card-resto__img" src="./images/restaurants/franc.jpg" alt="parc">
-                        <div class="card-resto__description">
-                            <div class="card-resto__txt">
-                                <p><strong>A la française</strong></p> 
-                                <p>Cité Rouge</p>
-                            </div>           
-                            <i class="fa-solid fa-heart card-resto__icon"></i>
+                    </a>
+                    <a href="html/resto_franc.html">
+                        <div class="card-resto">
+                            <img class="card-resto__img" src="./images/restaurants/franc.jpg" alt="parc">
+                            <div class="card-resto__description">
+                                <div class="card-resto__txt">
+                                    <p><strong>A la française</strong></p> 
+                                    <p>Cité Rouge</p>
+                                </div>
+                                <div class="card-resto__icon">
+                                    <span class="hide">
+                                        <span class="material-icons base">favorite_border</span>
+                                        <span class="material-icons hover">favorite</span>
+                                    </span>
+                                </div>           
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-resto">
-                        <img class="card-resto__img" src="./images/restaurants/delice.jpg" alt="parc">
-                        <div class="card-resto__description">
-                            <div class="card-resto__txt">
-                                <p><strong>Le délice des sens</strong></p> 
-                                <p>Folie-Méricourt</p>
-                            </div>           
-                            <i class="fa-solid fa-heart card-resto__icon"></i>
+                    </a>
+                    <a href="html/resto_delice.html">
+                        <div class="card-resto">
+                            <img class="card-resto__img" src="./images/restaurants/delice.jpg" alt="parc">
+                            <div class="card-resto__description">
+                                <div class="card-resto__txt">
+                                    <p><strong>Le délice des sens</strong></p> 
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                                <div class="card-resto__icon">
+                                    <span class="hide">
+                                        <span class="material-icons base">favorite_border</span>
+                                        <span class="material-icons hover">favorite</span>
+                                    </span>
+                                </div>           
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-            
-
         </main>
         <footer>
             <div class="footer__box">
