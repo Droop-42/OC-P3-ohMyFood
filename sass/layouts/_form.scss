@@ -9,16 +9,18 @@
         color: black;
         opacity: 1;
     }
-    i {
-        align-self: center;
-        margin-right: 10px;
-    }
+    
     &__loc {
         display: flex;
         justify-content: center;
         width: 100%;
         background-color: rgb(234, 234, 234);
         padding: 15px 0;
+        i {
+            display: flex;
+            align-self: center;
+            margin-right: 10px;
+        }
     }
 }
 
