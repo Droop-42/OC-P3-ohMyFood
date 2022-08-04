@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
+        <div class="loader">
+            <div class="loader__anim"></div>
+        </div>
         <header>
             <div class="header__logo">
                 <img src="./images/logo/ohmyfood.png" alt="logo">
@@ -23,7 +26,9 @@
             <div class="explo">
                 <h1>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
-                    <a class="button_search" href="#resto">Explorez nos restaurants</a>
+                    <button class="btn-gradient">
+                        <a href="#resto">Explorez nos restaurants</a>
+                    </button>
             </div>           
         </header>
         <main>
@@ -63,10 +68,7 @@
                                     <p>Ménilmontant</p>
                                 </div>
                                 <div class="card-resto__icon">
-                                    <span class="hide">
-                                        <span class="material-icons base">favorite_border</span>
-                                        <span class="material-icons hover">favorite</span>
-                                    </span>
+                                    <button class="btn-favorite"></button>
                                 </div>           
                             </div>
                         </div>
@@ -80,10 +82,7 @@
                                     <p>Charonne</p>
                                 </div>
                                 <div class="card-resto__icon">
-                                    <span class="hide">
-                                        <span class="material-icons base">favorite_border</span>
-                                        <span class="material-icons hover">favorite</span>
-                                    </span>
+                                    <button class="btn-favorite"></button>
                                 </div>           
                             </div>
                         </div>
@@ -97,10 +96,7 @@
                                     <p>Cité Rouge</p>
                                 </div>
                                 <div class="card-resto__icon">
-                                    <span class="hide">
-                                        <span class="material-icons base">favorite_border</span>
-                                        <span class="material-icons hover">favorite</span>
-                                    </span>
+                                    <button class="btn-favorite"></button>
                                 </div>           
                             </div>
                         </div>
@@ -114,10 +110,7 @@
                                     <p>Folie-Méricourt</p>
                                 </div>
                                 <div class="card-resto__icon">
-                                    <span class="hide">
-                                        <span class="material-icons base">favorite_border</span>
-                                        <span class="material-icons hover">favorite</span>
-                                    </span>
+                                    <button class="btn-favorite"></button>
                                 </div>           
                             </div>
                         </div>
@@ -142,8 +135,10 @@
                     <a href="#">Mentions légales</a>
                     <a href="#">Contact</a>
                 </div>
-            </div>
+            </div>            
         </footer>
+        
+        
     </body>
 
 </html>

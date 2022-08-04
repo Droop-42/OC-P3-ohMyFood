@@ -53,20 +53,25 @@
     }
     &__box {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         width: 90%;
         gap: 20px;
         align-items: center;
         justify-content: center;
-        max-width: 940px;
+        max-width: 1160px;
         a {
             display: flex;
-            width: 100%;
+            flex-direction: row;
+            width: 40%;
             justify-content: center;
         }
         @media (max-width: 900px) {
             flex-direction: column;
             justify-content: baseline;
+            a {
+                width: 100%;
+            }
             
         }
     }

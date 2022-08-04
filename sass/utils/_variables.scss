@@ -1,6 +1,8 @@
-$color-primary: blue;
-$color-secondary: green;
-$color-tertiary: red;
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-gradient-prim-sec: linear-gradient(to top left, #9356DC, #FF79DA);
+$color-gradient-prim-sec-lighter: linear-gradient(to top left, lighten(#9356DC, 2%), lighten(#FF79DA, 2%));
 
 $breakpoints: (
   mobile: 900px

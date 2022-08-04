@@ -1,10 +1,44 @@
-.button_search {
-    border: 0;
-    border-radius: 30px;
-    background-image: linear-gradient(to top left, #9356DC, #FF79DA); 
-    color: white;
-    font-size: 16px;
-    padding: 15px 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: 20px;
+.btn-gradient {
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+    margin: 20px; 
+    a {
+        border: 0;
+        border-radius: 30px;
+        background-image: $color-gradient-prim-sec; 
+        color: white;
+        font-size: 16px;
+        padding: 15px 20px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+            background-image: $color-gradient-prim-sec-lighter;
+        }
+    }   
 }
+
+.btn-favorite {
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+    font-family: "Material Icons";
+    font-size: 30px;
+    &::after {
+        content: "\e87e";
+        transition: all 400ms;
+    }
+    &:hover {
+        &::after {
+            content: "\e87d";
+            background: linear-gradient(to top left, #9356DC, #FF79DA);
+            background-clip: text;
+            color: transparent;
+        }
+    }
+}
+
+
+
+
+
