@@ -1,0 +1,8 @@
+$dish-number:4; //to get from futur db
+
+@for $i from 1 through $dish-number {
+    .menu__box .card-menu:nth-child(#{$i}) {
+        animation-delay: $i *.2s;
+    }
+  }
+

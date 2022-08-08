@@ -3,13 +3,14 @@
 
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/functions";
 /* ---------- Header ---------- */
 @import "./layouts/header";
 /* ---------- Form ---------- */
 @import "./layouts/form";
 /* ---------- Homes ---------- */
 @import "./pages/home";
-@import "./pages/resto_palette";
+@import "./pages/resto";
 
 @import "./layouts/footer";
 

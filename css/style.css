@@ -7,7 +7,7 @@ body {
   margin: 0;
 }
 
-h1, h2 {
+h1 {
   font-family: Shrikhand;
   font-size: 22px;
   font-weight: bolder;
@@ -20,6 +20,22 @@ h4 {
 a {
   text-decoration: none;
   color: black;
+}
+
+.menu__box .card-menu:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.menu__box .card-menu:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.menu__box .card-menu:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.menu__box .card-menu:nth-child(4) {
+  animation-delay: 0.8s;
 }
 
 /* ---------- Header ---------- */
@@ -181,6 +197,7 @@ main {
   position: relative;
   top: 0;
   left: 0;
+  z-index: 0;
 }
 
 .dish-box {
@@ -214,25 +231,22 @@ main {
   flex-direction: column;
   align-self: center;
   align-items: center;
-  border-radius: 40px 40px 0 0;
-  background-color: white;
+  background-color: rgb(246, 246, 246);
   margin: auto;
-  width: 80%;
-  gap: 20px;
-  position: relative;
-  bottom: 50px;
-}
-@media (max-width: 400px) {
-  .menu {
-    background-color: rgb(246, 246, 246);
-  }
+  width: 70%;
 }
 .menu__name {
   display: flex;
   align-items: center;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  bottom: 50px;
+  z-index: 3;
+  background-color: rgb(246, 246, 246);
   justify-content: space-between;
-  width: 75%;
-  max-width: 375px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: -50px;
 }
 .menu__title {
   width: 100%;
@@ -241,7 +255,7 @@ main {
 }
 .menu__box {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 90%;
   gap: 20px;
   align-items: center;
@@ -252,7 +266,6 @@ main {
   .menu__box {
     flex-direction: column;
     justify-content: baseline;
-    background-color: rgb(246, 246, 246);
   }
 }
 
@@ -272,7 +285,8 @@ hr {
 
 footer {
   background-color: rgb(53, 53, 53);
-  padding: 20px;
+  padding: 20px 0 0 0;
+  margin: 0;
   width: 100%;
   color: white;
   display: flex;
@@ -384,21 +398,6 @@ footer .footer__logo img {
   background-color: rgba(146, 86, 220, 0.1215686275);
 }
 
-.ic {
-  font-size: 40px;
-  background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-  background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.ic i:before {
-  display: inline;
-}
-
 .card-resto {
   display: flex;
   flex-direction: column;
@@ -453,40 +452,76 @@ footer .footer__logo img {
   padding: 10px;
 }
 
+.icheck {
+  font-size: 0;
+}
+
 .card-menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   border-radius: 20px;
-  width: 100%;
-  max-width: 300px;
+  height: 68px;
+  width: 300px;
+  overflow: hidden;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgb(246, 246, 246);
+  background-color: white;
+  opacity: 0;
+  animation: dish_anim 1s forwards;
 }
-@media (max-width: 900px) {
-  .card-menu {
-    background-color: white;
-  }
+.card-menu:hover .card-menu__check {
+  width: 20%;
+  height: 100%;
+  transform: scaleX(1);
+  overflow: hidden;
 }
-.card-menu__img {
-  border-radius: 15px 15px 0 0;
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
+.card-menu:hover .icheck {
+  font-size: 24px;
+  color: white;
+  animation: check_rotate 0.5s;
+}
+.card-menu:hover .card-menu__txt {
+  width: 50%;
+}
+.card-menu:hover .card-menu__description {
+  width: 80%;
+}
+.card-menu__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  transition: all 400ms;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  overflow: hidden;
 }
 .card-menu__description {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-content: center;
 }
 .card-menu__txt {
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
   padding: 10px 10px 10px 15px;
   margin: 0;
-  box-sizing: border-box;
 }
-.card-menu__txt p {
+.card-menu__txt--dish {
+  white-space: nowrap;
   margin: 5px 0 0 0;
+}
+.card-menu__txt--detail {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: small;
 }
 .card-menu__price {
   width: 10%;
@@ -494,6 +529,24 @@ footer .footer__logo img {
   padding: 10px;
 }
 
+@keyframes check_rotate {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes dish_anim {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .circle {
   border-radius: 50%;
   width: 16px;
