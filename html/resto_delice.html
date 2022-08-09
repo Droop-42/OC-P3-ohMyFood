@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../css/style.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <header>           
@@ -16,15 +17,19 @@
                 </a>
                 <img src="../images/logo/ohmyfood.png" alt="logo">
             </div>
-            <div>
+            <div class="img_box">
                 <img class="menu__img" src="../images/restaurants/delice.jpg" alt="parc">
             </div>
         </header>    
         <main>
             
             <div class="menu">
-                <div class="menu__title">
-                    <h2>Le délice des sens</h2>
+                <div class="menu__name">
+                    <div class="menu__name--box">
+                        <h2>Le délice des sens</h2>
+                        <button class="btn-favorite"></button>
+                    </div>
+
                 </div>
                 <div class="dish-box">
                     <div class="dish">
@@ -36,40 +41,46 @@
                             <div class="card-menu">
                                 <div class="card-menu__description">
                                     <div class="card-menu__txt">
-                                        <p><strong>Tartare de thon</strong></p> 
-                                            <p>Assaisonné au yuzu</p>
+                                        <span class="card-menu__txt--dish"><strong>Tartare de thon</strong></span> 
+                                            <span class="card-menu__txt--detail">Assaisonné au yuzu</span>
                                     </div>           
                                     <div class="card-menu__price">
                                         <span ><b>25€</b></span>
                                     </div>
                                 </div>
+                                <div class="card-menu__check">
+                                    <i class="fa-solid fa-circle-check icheck"></i>
+                                </div>
                             </div>   
-                        </div>
-                        <div class="menu__box">
+                        
                             <div class="card-menu">
                                 <div class="card-menu__description">
                                     <div class="card-menu__txt">
-                                        <p><strong>Bouchée de homard croustillant</strong></p> 
-                                            <p>Et sa farandole de petits légumes</p>
+                                        <span class="card-menu__txt--dish"><strong>Bouchée de homard croustillant</strong></span> 
+                                            <span class="card-menu__txt--detail">Et sa farandole de petits légumes</span>
                                     </div>           
                                     <div class="card-menu__price">
                                         <span ><b>35€</b></span>
                                     </div>
                                 </div>
+                                <div class="card-menu__check">
+                                    <i class="fa-solid fa-circle-check icheck"></i>
+                                </div>
                             </div>   
-                        </div>
-                        <div class="menu__box">
                             <div class="card-menu">
                                 <div class="card-menu__description">
                                     <div class="card-menu__txt">
-                                        <p><strong>Velouté de cèpes</strong></p> 
-                                            <p>Aux truffes</p>
+                                        <span class="card-menu__txt--dish"><strong>Velouté de cèpes</strong></span> 
+                                            <span class="card-menu__txt--detail">Aux truffes</span>
                                     </div>           
                                     <div class="card-menu__price">
                                         <span ><b>20€</b></span>
                                     </div>
                                 </div>
-                            </div>   
+                                <div class="card-menu__check">
+                                    <i class="fa-solid fa-circle-check icheck"></i>
+                                </div>
+                            </div> 
                         </div>
                     </div>
                     <div class="dish">
@@ -81,38 +92,43 @@
                             <div class="card-menu">
                                 <div class="card-menu__description">
                                     <div class="card-menu__txt">
-                                        <p><strong>Poulet rôti aux herbes de Provence</strong></p> 
-                                            <p>Et sa crème de truffe</p>
+                                        <span class="card-menu__txt--dish"><strong>Poulet rôti aux herbes de Provence</strong></span> 
+                                            <span class="card-menu__txt--detail">Et sa crème de truffe</span>
                                     </div>           
                                     <div class="card-menu__price">
                                         <span ><b>40€</b></span>
                                     </div>
                                 </div>
+                                <div class="card-menu__check">
+                                    <i class="fa-solid fa-circle-check icheck"></i>
+                                </div>
                             </div>   
-                        </div>
-                        <div class="menu__box">
                             <div class="card-menu">
                                 <div class="card-menu__description">
                                     <div class="card-menu__txt">
-                                        <p><strong>Langouste rôtie</strong></p> 
-                                            <p>Et ses légumes de saison</p>
+                                        <span class="card-menu__txt--dish"><strong>Langouste rôtie</strong></span> 
+                                            <span class="card-menu__txt--detail">Et ses légumes de saison</span>
                                     </div>           
                                     <div class="card-menu__price">
                                         <span ><b>35€</b></span>
                                     </div>
                                 </div>
+                                <div class="card-menu__check">
+                                    <i class="fa-solid fa-circle-check icheck"></i>
+                                </div>
                             </div>   
-                        </div>
-                        <div class="menu__box">
                             <div class="card-menu">
                                 <div class="card-menu__description">
                                     <div class="card-menu__txt">
-                                        <p><strong>Côte de boeuf Angus</strong></p> 
-                                            <p>Et sa purée de panais</p>
+                                        <span class="card-menu__txt--dish"><strong>Côte de boeuf Angus</strong></span> 
+                                            <span class="card-menu__txt--detail">Et sa purée de panais</span>
                                     </div>           
                                     <div class="card-menu__price">
                                         <span ><b>44€</b></span>
                                     </div>
+                                </div>
+                                <div class="card-menu__check">
+                                    <i class="fa-solid fa-circle-check icheck"></i>
                                 </div>
                             </div>   
                         </div>
@@ -125,44 +141,51 @@
                             <div class="card-menu">
                                 <div class="card-menu__description">
                                     <div class="card-menu__txt">
-                                        <p><strong>Farandole de desserts</strong></p> 
-                                            <p>Du chef</p>
+                                        <span class="card-menu__txt--dish"><strong>Farandole de desserts</strong></span> 
+                                            <span class="card-menu__txt--detail">Du chef</span>
                                     </div>           
                                     <div class="card-menu__price">
                                         <span ><b>18€</b></span>
                                     </div>
                                 </div>
+                                <div class="card-menu__check">
+                                    <i class="fa-solid fa-circle-check icheck"></i>
+                                </div>
                             </div>   
-                        </div>
-                        <div class="menu__box">
                             <div class="card-menu">
                                 <div class="card-menu__description">
                                     <div class="card-menu__txt">
-                                        <p><strong>Crème brulée</strong></p> 
-                                            <p>Revisitée</p>
+                                        <span class="card-menu__txt--dish"><strong>Crème brulée</strong></span> 
+                                            <span class="card-menu__txt--detail">Revisitée</span>
                                     </div>           
                                     <div class="card-menu__price">
                                         <span ><b>22€</b></span>
                                     </div>
                                 </div>
+                                <div class="card-menu__check">
+                                    <i class="fa-solid fa-circle-check icheck"></i>
+                                </div>
                             </div>   
-                        </div>
-                        <div class="menu__box">
                             <div class="card-menu">
                                 <div class="card-menu__description">
                                     <div class="card-menu__txt">
-                                        <p><strong>Tiramisu</strong></p> 
-                                            <p>À la noisette</p>
+                                        <span class="card-menu__txt--dish"><strong>Tiramisu</strong></span> 
+                                            <span class="card-menu__txt--detail">À la noisette</span>
                                     </div>           
                                     <div class="card-menu__price">
                                         <span ><b>23€</b></span>
                                     </div>
                                 </div>
+                                <div class="card-menu__check">
+                                    <i class="fa-solid fa-circle-check icheck"></i>
+                                </div>
                             </div>   
                         </div>
                     </div>
                 </div>
-                <a class="button_search" href="#resto">Commander</a>
+                <button class="btn-gradient">
+                    <a href="#resto">Commander</a>
+                </button>
             </div>
             
 

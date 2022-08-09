@@ -1,14 +1,7 @@
 .form {
     width: 100%;
     display: flex;
-    input {
-        background-color: rgb(234, 234, 234);
-        border: 0;
-        font-size: 16px;
-        font-weight: bold;
-        color: black;
-        opacity: 1;
-    }
+    
     
     &__loc {
         display: flex;
@@ -17,9 +10,18 @@
         background-color: rgb(234, 234, 234);
         padding: 15px 0;
         i {
-            display: flex;
+            position: relative !important;
+            margin-right: 30px;
             align-self: center;
-            margin-right: 10px;
+        }
+        input {
+            background-color: rgb(234, 234, 234);
+            border: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            opacity: 1;
+            height: 100%;
         }
     }
 }
