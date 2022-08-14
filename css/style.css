@@ -487,10 +487,9 @@ footer .footer__logo img {
   background-color: white;
   opacity: 0;
   animation: dish_anim 1s forwards;
-  transition: all 400ms;
 }
 .card-menu:hover .card-menu__check {
-  width: 20%;
+  width: 80px;
   height: 100%;
   background-color: #99E2D0;
   transform: translateX(0%);
@@ -513,11 +512,12 @@ footer .footer__logo img {
   justify-content: center;
   margin: 0;
   height: 100%;
+  width: 0;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
   transform-origin: 100% 50%;
   transform: translateX(100%);
-  transition: transform 400ms;
+  transition: all 400ms ease;
 }
 .card-menu__description {
   display: flex;
