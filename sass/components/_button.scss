@@ -3,19 +3,18 @@
     background: transparent;
     border: 1px solid transparent;
     margin: 20px; 
-    a {
-        border: 0;
-        border-radius: 30px;
-        background-image: $color-gradient-prim-sec; 
-        color: white;
-        font-size: 16px;
-        padding: 15px 20px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        &:hover {
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-            background-image: $color-gradient-prim-sec-lighter;
-        }
-    }   
+
+    border: 0;
+    border-radius: 30px;
+    background-image: $color-gradient-prim-sec; 
+    color: white;
+    font-size: 16px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        background-image: $color-gradient-prim-sec-lighter;
+    } 
 }
 
 .btn-favorite {
