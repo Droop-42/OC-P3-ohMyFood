@@ -22,8 +22,10 @@ footer {
         max-width: 350px;
         align-items: center;
         justify-content: center;
+        padding-bottom: 20px;
         @include mobile-only {
             align-items: baseline;
+            width: 90%;
         }      
     }
     .footer__link_box{

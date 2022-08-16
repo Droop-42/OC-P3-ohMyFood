@@ -108,9 +108,16 @@
         }
         .card-menu__txt {
             width: 60%; //50%
+            @media (max-width: 350px) {
+                width: 50%;
+            }
+
         }
         .card-menu__description {
             width: 80%;
+            @media (max-width: 350px) {
+                width: 70%;
+            }
 
         }
     }
@@ -130,7 +137,7 @@
     &__description {
         display: flex;
         width: 100%;
-        padding-right: 10px;
+        //padding-right: 10px;
         box-sizing: border-box;
         justify-content: space-between;
         transition: all 400ms ease;
@@ -144,6 +151,9 @@
         padding: 10px 10px 10px 15px;
         margin: 0;
         transition: all 400ms ease;
+        @media (max-width: 350px) {
+            width: 60%;
+        }
         &--dish {
             white-space: nowrap;
             overflow: hidden;
