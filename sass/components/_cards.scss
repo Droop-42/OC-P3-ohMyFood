@@ -72,9 +72,11 @@
         }
     }
     &__icon {
+        display: flex;
         width: 10%;
         align-self: center;
         padding: 10px;
+        justify-content: center;
     }
 }
 
@@ -127,9 +129,9 @@
         justify-content: center;
         margin: 0;
         height: 100%;
-        width: 60px;
+        width: 10px;
         position: absolute;
-        right: -60px;
+        right: -10px;
         background-color: $color-tertiary;
         border-radius: 0 20px 20px 0;
         transition: all 400ms ease;
@@ -137,7 +139,7 @@
     &__description {
         display: flex;
         width: 100%;
-        //padding-right: 10px;
+        //padding-right: 10px;//
         box-sizing: border-box;
         justify-content: space-between;
         transition: all 400ms ease;
