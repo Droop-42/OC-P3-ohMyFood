@@ -80,6 +80,17 @@
     }
 }
 
+.new {
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+    bottom: 150px;
+    right: 10px;
+    background-color: rgb(112, 228, 189);
+    padding: 10px;
+    color: rgb(1, 83, 1);
+}
+
 .icheck {
     font-size: 24px;
     color: white;
