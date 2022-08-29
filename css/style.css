@@ -56,6 +56,11 @@ header i {
   position: fixed;
   left: 20px;
 }
+header .material-symbols-rounded {
+  font-size: 22px;
+  position: fixed;
+  left: 20px;
+}
 header .header__logo {
   background-color: white;
   display: flex;
@@ -368,6 +373,12 @@ footer .footer__logo img {
   footer .footer__logo {
     justify-content: left;
   }
+}
+
+.material-symbols-rounded {
+  margin-right: 5px;
+  width: 15px;
+  font-size: 16px;
 }
 
 .btn-gradient {
