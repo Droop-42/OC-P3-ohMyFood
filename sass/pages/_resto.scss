@@ -46,7 +46,7 @@
         align-items: center;
         gap: 10px;
     }
-    @media (max-width: 1000px) {
+    @media (max-width: 1100px) {
         flex-direction: column;
         justify-content: center;
         align-items: center;     
@@ -62,7 +62,7 @@
     margin: auto;
     padding-bottom: 20px;  
     width: 70%;
-    @media (max-width: 1400px) {
+    @media (max-width: 1530px) {
         width: 100%;     
     }
     &__name {
@@ -107,7 +107,7 @@
         align-items: center;
         justify-content: center;
         max-width: 940px;
-        @media (max-width: 1000px) {
+        @media (max-width: 1100px) {
             flex-direction: column;
             justify-content: initial;
             //background-color: rgb(246, 246, 246);
